@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+.icon {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  background-image: url("assets/arrow.png") !important;
+  object-fit: cover;
+}
+
+.icon_act {
+  position: absolute;
+  width: 30px;
+  top: 50%;
+  right: 30px;
+  background-image: url("assets/arrow_active.png") !important;
+}
+
+input.ng-invalid.ng-dirty,
+input.ng-invalid.ng-touched {
+  border-color: red;
+}
+
+.loader-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.53);
+}
+
+.loader {
+  border: 15px solid #f3f3f3;
+  border-top: 15px solid #0621ab;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
